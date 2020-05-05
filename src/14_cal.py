@@ -32,11 +32,11 @@ import calendar
 from datetime import datetime
 
 def displayCalendar(month, year):
-  # print(calendar.monthcalendar(int(year), int(month)))
+  print(calendar.month(int(year), int(month)))
   
-  mycalendar = calendar.monthcalendar(int(year), int(month))
-  for x in mycalendar:
-    print(x)
+  # mycalendar = calendar.monthcalendar(int(year), int(month))
+  # for x in mycalendar:
+  #   print(x)
 
 if len(sys.argv) == 1:
   displayCalendar(datetime.now().month, datetime.now().year)
